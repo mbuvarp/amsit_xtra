@@ -1,11 +1,19 @@
 {
-    "manifest-version": 2,
+    "manifest_version": 2,
 
     "name": "Amsit-Xtra",
     "description": "",
     "version": "0.1",
 
     "permissions": [
-        "active-tab"
+        "activeTab",
+        "storage"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://lists.samfundet.no/amsit/*/"],
+            "js": ["libs/jquery.min.js", "libs/jsrender.min.js", "background.js"]
+        }
     ]
 }
