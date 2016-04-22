@@ -1,0 +1,11 @@
+{
+    "manifest-version": 2,
+
+    "name": "Amsit-Xtra",
+    "description": "",
+    "version": "0.1",
+
+    "permissions": [
+        "active-tab"
+    ]
+}
